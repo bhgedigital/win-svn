@@ -1,6 +1,15 @@
-FROM microsoft/nanoserver:1709
+FROM microsoft/windowsservercore:1709
 
 MAINTAINER Alex Iankoulski <alex_iankoulski@yahoo.com>
 
-#RUN apk add --update libintl && apk add --virtual build_deps subversion
+# Install subversion
+
+COPY Container C:
+
+RUN Setup-Subversion-1.8.17.msi
+
+RUN del C:\Setup-Subversion-1.8.17.msi
+
+
+
 
