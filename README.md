@@ -9,7 +9,7 @@ Command:
 
 Note: The folder %cd%\out must exist prior to executing the command
 
-    docker container run --rm -it -v "%cd%\out":"c:\wd" iankoulski/win-svn cmd /C "cd c:\wd && svn checkout https://github.com/lodash/lodash/trunk/"
+    docker container run --rm -it -v "%cd%\out":"c:\wd" bhgedigital/win-svn cmd /C "cd c:\wd && svn checkout https://github.com/lodash/lodash/trunk/"
 
 Outcome:
 
